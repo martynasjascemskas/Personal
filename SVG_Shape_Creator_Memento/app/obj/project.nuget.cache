@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "62XKOPWVO9+DvA7Vz40GbF8ysy6TDQ1paipWCS0L3pU4Hbu7BAr5OUSDyiuy8YViQLtEgHz9Tow2NTECeUFVtA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\marti\\Desktop\\VSC\\CSharp\\assignment3\\app\\app.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marti\\.nuget\\packages\\system.commandline\\2.0.0-beta4.22272.1\\system.commandline.2.0.0-beta4.22272.1.nupkg.sha512"
+  ],
+  "logs": []
+}

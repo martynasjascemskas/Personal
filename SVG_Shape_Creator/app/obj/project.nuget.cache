@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "h6EOsnBd95RBBT5OGfSqKQZWk68OeJz01xrePhMXM9eQDxvqIq0opvWUT/xH2uYLVc3X36Y/n5BDQYBn+wFyuA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\marti\\OneDrive\\Stalinis kompiuteris\\VSC\\CSharp\\assignment2\\app\\app.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marti\\.nuget\\packages\\commandlineparser\\2.9.1\\commandlineparser.2.9.1.nupkg.sha512"
+  ],
+  "logs": []
+}

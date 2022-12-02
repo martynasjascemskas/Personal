@@ -1,0 +1,60 @@
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\obj\Debug\net6.0\app.csproj.AssemblyReference.cache
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\obj\Debug\net6.0\app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\obj\Debug\net6.0\app.AssemblyInfoInputs.cache
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\obj\Debug\net6.0\app.AssemblyInfo.cs
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\obj\Debug\net6.0\app.csproj.CoreCompileInputs.cache
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\bin\Debug\net6.0\app.exe
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\bin\Debug\net6.0\app.deps.json
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\bin\Debug\net6.0\app.runtimeconfig.json
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\bin\Debug\net6.0\app.dll
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\bin\Debug\net6.0\app.pdb
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\bin\Debug\net6.0\System.CommandLine.dll
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\bin\Debug\net6.0\cs\System.CommandLine.resources.dll
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\bin\Debug\net6.0\de\System.CommandLine.resources.dll
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\bin\Debug\net6.0\es\System.CommandLine.resources.dll
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\bin\Debug\net6.0\fr\System.CommandLine.resources.dll
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\bin\Debug\net6.0\it\System.CommandLine.resources.dll
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\bin\Debug\net6.0\ja\System.CommandLine.resources.dll
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\bin\Debug\net6.0\ko\System.CommandLine.resources.dll
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\bin\Debug\net6.0\pl\System.CommandLine.resources.dll
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\bin\Debug\net6.0\pt-BR\System.CommandLine.resources.dll
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\bin\Debug\net6.0\ru\System.CommandLine.resources.dll
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\bin\Debug\net6.0\tr\System.CommandLine.resources.dll
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\bin\Debug\net6.0\zh-Hans\System.CommandLine.resources.dll
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\bin\Debug\net6.0\zh-Hant\System.CommandLine.resources.dll
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\obj\Debug\net6.0\app.csproj.CopyComplete
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\obj\Debug\net6.0\app.dll
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\obj\Debug\net6.0\refint\app.dll
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\obj\Debug\net6.0\app.pdb
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\obj\Debug\net6.0\app.genruntimeconfig.cache
+C:\Users\marti\OneDrive\Stalinis kompiuteris\VSC\CSharp\assignment3\app\obj\Debug\net6.0\ref\app.dll
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\bin\Debug\net6.0\app.exe
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\bin\Debug\net6.0\app.deps.json
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\bin\Debug\net6.0\app.runtimeconfig.json
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\bin\Debug\net6.0\app.dll
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\bin\Debug\net6.0\app.pdb
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\bin\Debug\net6.0\System.CommandLine.dll
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\bin\Debug\net6.0\cs\System.CommandLine.resources.dll
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\bin\Debug\net6.0\de\System.CommandLine.resources.dll
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\bin\Debug\net6.0\es\System.CommandLine.resources.dll
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\bin\Debug\net6.0\fr\System.CommandLine.resources.dll
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\bin\Debug\net6.0\it\System.CommandLine.resources.dll
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\bin\Debug\net6.0\ja\System.CommandLine.resources.dll
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\bin\Debug\net6.0\ko\System.CommandLine.resources.dll
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\bin\Debug\net6.0\pl\System.CommandLine.resources.dll
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\bin\Debug\net6.0\pt-BR\System.CommandLine.resources.dll
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\bin\Debug\net6.0\ru\System.CommandLine.resources.dll
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\bin\Debug\net6.0\tr\System.CommandLine.resources.dll
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\bin\Debug\net6.0\zh-Hans\System.CommandLine.resources.dll
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\bin\Debug\net6.0\zh-Hant\System.CommandLine.resources.dll
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\obj\Debug\net6.0\app.csproj.AssemblyReference.cache
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\obj\Debug\net6.0\app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\obj\Debug\net6.0\app.AssemblyInfoInputs.cache
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\obj\Debug\net6.0\app.AssemblyInfo.cs
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\obj\Debug\net6.0\app.csproj.CoreCompileInputs.cache
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\obj\Debug\net6.0\app.csproj.CopyComplete
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\obj\Debug\net6.0\app.dll
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\obj\Debug\net6.0\refint\app.dll
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\obj\Debug\net6.0\app.pdb
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\obj\Debug\net6.0\app.genruntimeconfig.cache
+C:\Users\marti\Desktop\VSC\CSharp\assignment3\app\obj\Debug\net6.0\ref\app.dll

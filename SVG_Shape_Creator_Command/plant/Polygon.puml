@@ -1,0 +1,12 @@
+@startuml
+class Polygon {
+    - Points : string
+    - Stroke : string
+    - Fill : string
+    - StrokeWidth : string
+    + Polygon(p1:string, stroke:string, fill:string, strokeWidth:string)
+    + Polygon(p1:string)
+    + <<override>> ToSvg() : string
+}
+AbstractShape <|-- Polygon
+@enduml

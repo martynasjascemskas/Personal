@@ -1,0 +1,13 @@
+@startuml
+class Caretaker {
+    + Caretaker(originator:Originator)
+    + Backup() : void
+    + Undo() : void
+    + Redo() : void
+}
+class "List`1"<T> {
+}
+Caretaker o-> "savedCanvases<Memento>" "List`1"
+Caretaker o-> "cache<Memento>" "List`1"
+Caretaker o-> "_originator" Originator
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+class Memento {
+    + Memento(state:Canvas)
+    + getState() : Canvas
+}
+Memento --> "_state" Canvas
+@enduml

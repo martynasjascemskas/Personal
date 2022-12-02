@@ -1,0 +1,128 @@
+@startuml
+class Circle {
+    - CX : int
+    - CY : int
+    - R : int
+    - Stroke : string
+    - Fill : string
+    - StrokeWidth : string
+    + Circle(cx:int, cy:int, r:int, stroke:string, fill:string, strokeWidth:string)
+    + Circle(cx:int, cy:int, r:int)
+    + <<override>> ToSvg() : string
+}
+AbstractShape <|-- Circle
+class Ellipse {
+    - CX : int
+    - CY : int
+    - RX : int
+    - RY : int
+    - Stroke : string
+    - Fill : string
+    - StrokeWidth : string
+    + Ellipse(cx:int, cy:int, rx:int, ry:int, stroke:string, fill:string, strokeWidth:string)
+    + Ellipse(cx:int, cy:int, rx:int, ry:int)
+    + <<override>> ToSvg() : string
+}
+AbstractShape <|-- Ellipse
+class Line {
+    - X1 : int
+    - Y1 : int
+    - X2 : int
+    - Y2 : int
+    - Stroke : string
+    - Fill : string
+    - StrokeWidth : string
+    + Line(x1:int, y1:int, x2:int, y2:int, stroke:string, fill:string, strokeWidth:string)
+    + Line(x1:int, y1:int, x2:int, y2:int)
+    + <<override>> ToSvg() : string
+}
+AbstractShape <|-- Line
+class Path {
+    - Points : string
+    - Stroke : string
+    - Fill : string
+    - StrokeWidth : string
+    + Path(p1:string, stroke:string, fill:string, strokeWidth:string)
+    + Path(p1:string)
+    + <<override>> ToSvg() : string
+}
+AbstractShape <|-- Path
+class Polygon {
+    - Points : string
+    - Stroke : string
+    - Fill : string
+    - StrokeWidth : string
+    + Polygon(p1:string, stroke:string, fill:string, strokeWidth:string)
+    + Polygon(p1:string)
+    + <<override>> ToSvg() : string
+}
+AbstractShape <|-- Polygon
+class Polyline {
+    - Points : string
+    - Stroke : string
+    - Fill : string
+    - StrokeWidth : string
+    + Polyline(p1:string, stroke:string, fill:string, strokeWidth:string)
+    + Polyline(p1:string)
+    + <<override>> ToSvg() : string
+}
+AbstractShape <|-- Polyline
+class Program {
+    {static} Main(args:string[]) : void
+}
+class Rectangle {
+    - X : int
+    - Y : int
+    - Width : int
+    - Height : int
+    - Stroke : string
+    - Fill : string
+    - StrokeWidth : string
+    + Rectangle(x:int, y:int, width:int, height:int, stroke:string, fill:string, strokeWidth:string)
+    + Rectangle(x:int, y:int, width:int, height:int)
+    + <<override>> ToSvg() : string
+}
+AbstractShape <|-- Rectangle
+abstract class AbstractShape {
+    + {abstract} ToSvg() : string
+}
+class Canvas {
+    - Width : int
+    - Height : int
+    + Canvas(width:int, height:int)
+    + Canvas(shapes:List<AbstractShape>, width:int, height:int)
+    - BoilerSVG : string
+    + AddShape(shape:AbstractShape) : void
+    + getShapes() : List<AbstractShape>
+    + setCanvas(l:List<AbstractShape>) : void
+    + clearCanvas() : void
+    + ToSvg() : string
+    + {static} <<async>> SaveFile(text:string) : Task
+}
+class "List`1"<T> {
+}
+Canvas --> "Shapes<AbstractShape>" "List`1"
+class Caretaker {
+    + Caretaker(originator:Originator)
+    + Backup() : void
+    + Undo() : void
+    + Redo() : void
+}
+class "List`1"<T> {
+}
+Caretaker o-> "savedCanvases<Memento>" "List`1"
+Caretaker o-> "cache<Memento>" "List`1"
+Caretaker o-> "_originator" Originator
+class Memento {
+    + Memento(state:Canvas)
+    + getState() : Canvas
+}
+Memento --> "_state" Canvas
+class Originator {
+    + Originator(state:Canvas)
+    + getCurrentState() : Canvas
+    + saveToMemento() : Memento
+    + restoreFromMemento(memento:Memento) : void
+}
+Originator --> "_state" Canvas
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+class Rectangle {
+    - X : int
+    - Y : int
+    - Width : int
+    - Height : int
+    - Stroke : string
+    - Fill : string
+    - StrokeWidth : string
+    + Rectangle(x:int, y:int, width:int, height:int, stroke:string, fill:string, strokeWidth:string)
+    + Rectangle(x:int, y:int, width:int, height:int)
+    + <<override>> ToSvg() : string
+}
+AbstractShape <|-- Rectangle
+@enduml

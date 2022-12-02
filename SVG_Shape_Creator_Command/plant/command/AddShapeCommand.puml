@@ -1,0 +1,8 @@
+@startuml
+class AddShapeCommand {
+    + AddShapeCommand(receiver:assignment4.Canvas, shape:assignment4.AbstractShape)
+    + <<override>> Execute() : void
+    + <<override>> Unexecute() : void
+}
+ICommand <|-- AddShapeCommand
+@enduml

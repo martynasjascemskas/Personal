@@ -1,0 +1,15 @@
+@startuml
+class Line {
+    - X1 : int
+    - Y1 : int
+    - X2 : int
+    - Y2 : int
+    - Stroke : string
+    - Fill : string
+    - StrokeWidth : string
+    + Line(x1:int, y1:int, x2:int, y2:int, stroke:string, fill:string, strokeWidth:string)
+    + Line(x1:int, y1:int, x2:int, y2:int)
+    + <<override>> ToSvg() : string
+}
+AbstractShape <|-- Line
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+class Ellipse {
+    - CX : int
+    - CY : int
+    - RX : int
+    - RY : int
+    - Stroke : string
+    - Fill : string
+    - StrokeWidth : string
+    + Ellipse(cx:int, cy:int, rx:int, ry:int, stroke:string, fill:string, strokeWidth:string)
+    + Ellipse(cx:int, cy:int, rx:int, ry:int)
+    + <<override>> ToSvg() : string
+}
+AbstractShape <|-- Ellipse
+@enduml

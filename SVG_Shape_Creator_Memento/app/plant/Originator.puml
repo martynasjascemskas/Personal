@@ -1,0 +1,9 @@
+@startuml
+class Originator {
+    + Originator(state:Canvas)
+    + getCurrentState() : Canvas
+    + saveToMemento() : Memento
+    + restoreFromMemento(memento:Memento) : void
+}
+Originator --> "_state" Canvas
+@enduml
