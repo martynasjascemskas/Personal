@@ -1,0 +1,187 @@
+html, body{
+    padding: 0px;
+    margin: 0px;
+    position:absolute;
+    bottom:-30px;
+}
+.buttons{
+    background-color: #adadad;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    font-size: 10px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    border-radius: 13px;
+    cursor: pointer;
+    outline: none;
+    margin-right: 5px;
+    transition: opacity .4s ease-out, transform .4s ease-out, visibility 4s ease-out;
+    position:relative;
+    top: -230px;
+    left: 35px;
+}
+.buttons:hover{
+    background-color: #0ab5e9;
+}
+.buttons:active{
+    background-color: #006eff;
+}
+.buttons.button4{
+    font-size:15px;
+    padding:7px 13px;
+}
+.buttons.button5{
+    font-size:15px;
+    padding:7px 13px;
+}
+.buttons.button6{
+    font-size:15px;
+    padding:7px 13px;
+}
+.buttons.button7{
+    font-size:15px;
+    padding:7px 13px;
+}
+.buttons.button8{
+    font-size:15px;
+    padding:7px 13px;
+}
+.buttons.button9{
+    font-size:15px;
+    padding:7px 13px;
+}
+.buttons.button10{
+    font-size:15px;
+    padding:7px 13px;
+}
+.buttons.button11{
+    font-size:15px;
+    padding:7px 13px;
+}
+.buttons.button12{
+    font-size:15px;
+    padding:7px 13px;
+}
+.buttons.button13{
+    font-size:15px;
+    padding:7px 13px;
+}
+body{
+    font-size: 20px;
+    font-weight: bold;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.button-zone{
+    position:relative;
+    top: -55px;
+    left: 100px;
+}
+.animation-zone{
+    position:relative;
+    top: -250px;
+    left: 80px;
+}
+.source-zone{
+    position:relative;
+    top: -110px;
+    left: 410px;
+}
+.slidecontainerup {
+    width: 0px;
+    position:relative;
+    top:-350px;
+    left: 250px;
+    border-radius: 0px;
+}
+.slidecontainerdown {
+    width: 0px;
+    position:relative;
+    top:-520px;
+    left: 10px;
+}
+.myDisplayBox {
+    border: 1px solid black;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: white;
+    height: 377px;
+    width: 298px;
+    background-color: grey;
+    padding: 10px;
+    overflow: scroll;
+    position:relative;
+    bottom:1157px;
+    left:340px;
+}
+.r-brow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin:-60px 0 0 -60px;
+    animation: 4s linear infinite;
+}
+.animation-area{
+    width:317px;
+    height:200px;
+    background:black;
+    position:absolute;
+    bottom:281px;
+    left:16px;
+    border:1px solid black;
+}
+.button-area{
+    width:317px;
+    height:100px;
+    background:black;
+    position:absolute;
+    bottom:87px;
+    left:16px;
+    border:1px solid black;
+}
+.grey-background{
+    width:700px;
+    height:500px;
+    background:grey;
+    position:absolute;
+    bottom:526px;
+    left:0px;
+    border:1px solid black;
+}
+.p1{
+    width:200px;
+    position:relative;
+    bottom:935px;
+    left:85px;
+    color:white;
+}
+.p2{
+    width:200px;
+    position:relative;
+    bottom:945px;
+    left:85px;
+    color:white;
+}
+.p3{
+    width:200px;
+    position:relative;
+    bottom:957px;
+    left:85px;
+    color:white;
+}
+.p4{
+    width:200px;
+    position:relative;
+    bottom:970px;
+    left:85px;
+    color:white;
+}
+.p5{
+    width:200px;
+    position:relative;
+    bottom:985px;
+    left:85px;
+    color:white;
+    margin:0;
+}

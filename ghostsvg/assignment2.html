@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--WINDOWS USED OPERA browser and tested in Chrome(Version 99.0.4844.51 (Official Build) (64-bit)), 
+    works in both just that in order for chrome to appear properly, had to move it down a bit for some reason-->
+<html>
+    <head>
+        <link rel="stylesheet" href="assignment2.css">
+        
+    </head>
+<body>
+    <div class="grey-background" id="grey-background">
+    <object class="mysvg" id="mySVG" data="./ghost.svg" type="image/svg+xml"> <!--SVG display box-->
+        <svg width="660" height="480" viewBox="-45 -6 100 170">
+        <rect id="ghost-background" x="10" width="120" height="140" style="fill:black; stroke-width:1; stroke:black"/>
+        <g id="ghost" transform="rotate(0), translate(18,0), scale (1.0)"><!--Copied from assignment 2 pdf, modified and added code-->
+            
+                <path class="ghost-body" id="body" d="M 10 120 A 2.0 5.8, 0 0 1, 90 120" style="stroke:white; stroke-width:0.5; fill:white"/>
+                <animate id="ghostyes" begin="click" attributeName="opacity" values="0.3;1;0.3" dur="4s" repeatCount="2"/>
+                    <g id="eyes" transform="rotate(0,50,40), translate(0,0)">
+
+                        <g id="eye-r" transform="rotate(0,50,40), translate(0,0)"> <!--move left eye/pupil-->
+                            <g transform="translate(45,40)">
+                            <ellipse id="eye-l-ball" rx="4" ry="6" style="stroke:black; fill:black;">
+                               <animateTransform id="leyeball" begin="ghostyes.end" attributeType="xml" attributeName="transform" type="scale" values="1 1; 1.2 1.2; 1 1" keyTimes="0; 0.5; 1" dur="3s" repeatCount="2"/>
+                            </ellipse>
+                            </g>
+                            <circle id="eye-l-pupil" cx="45" cy="44" r="0.5" style="stroke:red; fill:red">
+                                <animateMotion id="leftpupil" begin="leyeball.end" dur="1.5s" repeatCount="2" path="M -1 -5 L 2 -5 L -1 0 L 2 0 L -1 -5"/>
+                            </circle>
+                        </g>
+                        <g id="eye-l-brow" transform="translate(0,0)"> <!--move left eyebrow-->
+                            <path d="M 41 32 Q 45 27 49 32" stroke="black" stroke-width="0.8" fill="transparent"/>
+                            <animateMotion id="rbrow" begin="leftpupil.end" dur="2s" repeatCount="2" path="M 0 -3 L 0 3 V -3" />
+                        </g>
+                        <g id="eye-l" transform="rotate(0,50,40), translate(0,0)"><!--move right eye/pupil-->
+                            <g transform="translate(55,40)">
+                            <ellipse rx="4" ry="6" style="stroke:black; fill:black">
+                            <animateTransform attributeType="xml" id="reyeball" begin="ghostyes.end" attributeName="transform" type="scale" values="1 1; 1.2 1.2; 1 1" keyTimes="0; 0.5; 1" dur="3s" repeatCount="2"/>
+                            </ellipse>
+                            </g>
+                            <circle class="right-pupil" id="eye-r-pupil" cx="55" cy="44" r="0.5" style="stroke:red; fill:red">
+                                <animateMotion dur="1.5s" begin="leyeball.end" repeatCount="2" path="M -1 -5 L 2 -5 L -1 0 L 2 0 L -1 -5"/>
+                            </circle>
+                        </g>
+                        <g id="eye-r-brow" transform="translate(0,0)"><!--move right eyebrow-->
+                            <path d="M 51 32 Q 55 26 59 32" stroke="black" stroke-width="0.8" fill="transparent"/>
+                            <animateMotion dur="2s" begin="leftpupil.end" repeatCount="2" path="M 0 -3 L 0 3 V -3" />
+                        </g>
+                    </g>
+                    
+    </g>
+    <g transform="translate(20,190)"><!--created wave using https://yqnn.github.io/svg-path-editor/ -->
+    <path d="M 72 0 H 48 H 24 H 0 v -19.2 C 14.4 -19.2 14.4 -24 24 -24 C 38.4 -24 38.4 -19.2 48 -19.2 c 0 0 0 0 0 0 C 62.4 -19.2 62.4 -24 72 -24 C 86.4 -24 86.4 -19.2 96 -19.2 V 0 H 72 z" style="stroke:black; fill:black">
+        <animateTransform id="wave"attributeName="transform" type="translate" begin="rbrow.end" dur="2s" values="-7 -55; 8 -55; -7 -55" keyTimes="0; 0.5; 1" repeatCount="3"/>
+        </path>
+    </g>
+    <g id="mouth" transform="translate(7,80)"><!--move mouth. Was created by https://yqnn.github.io/svg-path-editor/-->
+    <path id="mouth" d="M 47 0 Q 59 48 76 0" style="stroke:black; fill:black;">
+        <animateTransform attributeType="xml" attributeName="transform" type="scale" begin="wave.end" values="1,1; 1,-1; 1,1" keyTimes="0; 0.5; 1" dur="3s" repeatCount="2"/>
+    </path>
+    </g>
+    
+</svg>
+</object>
+<div>
+    <div class="animation-area" id="animation-zone"></div>
+    <div class="button-area" id="button-zone"></div>
+    <div class="button-zone">BUTTON ZONE</div>
+    <div class="animation-zone">ANIMATION ZONE</div>
+    <div class="source-zone">SVG / SOURCE ZONE</div>
+    <button class="buttons button1" onclick="document.getElementById('ghostyes').beginElement();">ANIMATE</button>
+    <button class="buttons button2" onclick="toggleSVG()">SVG / SOURCE</button>
+    <button class="buttons button3" onclick="downloadSVG()">DOWNLOAD</button>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <div class ="slidecontainerup"><!--Div class used to store plus character buttons to move them to one side -->
+        <button class="buttons button4" onclick="eyeBrowUp()">+</button>
+        <button class="buttons button5" onclick="eyeBrowRight()">+</button>
+        <button class="buttons button6" onclick="eyesUp()">+</button>
+        <button class="buttons button7" onclick="eyesRight()">+</button>
+        <button class="buttons button8" onclick="mouthUp()">+</button>
+    </div>
+    <div class="slidecontainerdown"><!--Div class used to store minus character buttons to move them to one side -->
+        <button class="buttons button9" onclick="eyeBrowDown()">-</button>
+        <button class="buttons button10" onclick="eyeBrowLeft()">-</button>
+        <button class="buttons button11" onclick="eyesDown()">-</button>
+        <button class="buttons button12" onclick="eyesLeft()">-</button>
+        <button class="buttons button13" onclick="mouthDown()">-</button>
+    </div>
+    <p class="p1">Eyebrow UP/DOWN</p>
+    <p class="p2">Eyebrow LEFT/RIGHT</p>
+    <p class="p3">Eyes UP/DOWN</p>
+    <p class="p4">Eyes LEFT/RIGHT</p>
+    <p class="p5">Mouth UP/DOWN</p>
+    <div id="myXMLDisplay" class="myDisplayBox" style="display: none;"></div>
+</div>
+    
+
+<script>
+    //John Keatings github code :(
+    // EYEBROW TRANSFORM GETTER
+    //
+    var transform = document.getElementById('eye-r-brow').getAttributeNS(null, 'transform');
+    let translatexy = /translate\(\-*\d+\,\-*\d+\)/i;
+    let reCoords = /\-*\d+/g; 
+    var translate = translatexy.exec(transform); 
+    var coords = translate.toString().match(reCoords);
+    var eyeBrowX =  parseFloat(coords[0]);
+    var eyeBrowY =  parseFloat(coords[1]);
+    ///John Keatings github code :(
+    ///EYE TRANSFORM GETTER
+    ///
+    var transform2 = document.getElementById('eye-l').getAttributeNS(null, 'transform');
+    let translatexy2 = /translate\(\-*\d+\,\-*\d+\)/i;
+    let reCoords2 = /\-*\d+/g; 
+    var translate2 = translatexy2.exec(transform2); 
+    var coords2 = translate2.toString().match(reCoords2);
+    var eyesX =  parseFloat(coords2[0]);
+    var eyesY =  parseFloat(coords2[1]);
+    ///John Keatings github code :(
+    ///MOUTH TRANSFORM GETTER
+    ///
+    var transform3 = document.getElementById('mouth').getAttributeNS(null, 'transform');
+    let translatexy3 = /translate\(\-*\d+\,\-*\d+\)/i;
+    let reCoords3 = /\-*\d+/g; 
+    var translate3 = translatexy3.exec(transform3); 
+    var coords3 = translate3.toString().match(reCoords3);
+    var mouthX =  parseFloat(coords3[0]);
+    var mouthY =  parseFloat(coords3[1]);
+
+    function toggleSVG() { //https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp and some of John Keatings code from github.
+        var displayBox = document.getElementById('myXMLDisplay');
+        displayBox.textContent = document.getElementById('mySVG').innerHTML +"</svg>";
+        if(displayBox.style.display == "none"){
+            displayBox.style.display = "block";
+        }
+        else{
+            displayBox.style.display = "none";
+        }
+    }
+    function downloadSVG(){
+        //https://stackoverflow.com/questions/29702758/html-button-to-save-div-content-using-javascript
+        //When downloading the svg, it will only play an animation IF animate button is pressed before. Bug in code, I dont know how to fix.
+        //
+        var a = document.body.appendChild(
+        document.createElement("a")
+        );
+        a.download = "export.html";
+        a.href = "data:text/html," + document.getElementById("mySVG").innerHTML;
+        a.click();
+    }
+    //
+    //Self explanatory, gets ID of a certain element, adds or removes a pixel translation based on what button is pressed
+    //
+    function eyeBrowUp(){
+        document.getElementById('eye-r-brow').setAttribute('transform','translate('+ eyeBrowX + ',' + --eyeBrowY +')');
+        document.getElementById('eye-l-brow').setAttribute('transform','translate('+ eyeBrowX + ',' + --eyeBrowY +')');
+    }
+    function eyeBrowDown(){
+        document.getElementById('eye-r-brow').setAttribute('transform','translate('+ eyeBrowX + ',' + ++eyeBrowY +')');
+        document.getElementById('eye-l-brow').setAttribute('transform','translate('+ eyeBrowX + ',' + ++eyeBrowY +')');
+    }
+    function eyeBrowRight(){
+        document.getElementById('eye-r-brow').setAttribute('transform','translate('+ ++eyeBrowX + ',' + eyeBrowY +')');
+        document.getElementById('eye-l-brow').setAttribute('transform','translate('+ ++eyeBrowX + ',' + eyeBrowY +')');
+    }
+    function eyeBrowLeft(){
+        document.getElementById('eye-r-brow').setAttribute('transform','translate('+ --eyeBrowX + ',' + eyeBrowY +')');
+        document.getElementById('eye-l-brow').setAttribute('transform','translate('+ --eyeBrowX + ',' + eyeBrowY +')');
+    }
+    function eyesUp(){
+        document.getElementById('eye-r').setAttribute('transform','translate('+ eyesX + ',' + --eyesY +')');
+        document.getElementById('eye-l').setAttribute('transform','translate('+ eyesX + ',' + --eyesY +')');
+    }
+    function eyesDown(){
+        document.getElementById('eye-r').setAttribute('transform','translate('+ eyesX + ',' + ++eyesY +')');
+        document.getElementById('eye-l').setAttribute('transform','translate('+ eyesX + ',' + ++eyesY +')');
+    }
+    function eyesLeft(){
+        document.getElementById('eye-r').setAttribute('transform','translate('+ --eyesX + ',' + eyesY +')');
+        document.getElementById('eye-l').setAttribute('transform','translate('+ --eyesX + ',' + eyesY +')');
+    }
+    function eyesRight(){
+        document.getElementById('eye-r').setAttribute('transform','translate('+ ++eyesX + ',' + eyesY +')');
+        document.getElementById('eye-l').setAttribute('transform','translate('+ ++eyesX + ',' + eyesY +')');
+    }
+    function mouthUp(){
+        document.getElementById('mouth').setAttribute('transform','translate('+ mouthX + ',' + --mouthY +')');
+    }
+    function mouthDown(){
+        document.getElementById('mouth').setAttribute('transform','translate('+ mouthX + ',' + ++mouthY +')');
+    }
+    function mouthLeft(){
+        document.getElementById('mouth').setAttribute('transform','translate('+ --mouthX + ',' + mouthY +')');
+    }
+    function mouthRight(){
+        document.getElementById('mouth').setAttribute('transform','translate('+ ++mouthX + ',' + mouthY +')');
+    }
+</script>
+</div>
+</body>
+</html>
