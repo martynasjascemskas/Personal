@@ -1,4 +1,4 @@
-﻿#SVG Shape Creator using NO DESIGN PATTERNS
+﻿# SVG Shape Creator using NO DESIGN PATTERNS
 
 SVG Shape Creator project done during University. <br />
 Allows you to create an SVG shape inside a Canvas. <br />
