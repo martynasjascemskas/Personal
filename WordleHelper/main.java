@@ -43,8 +43,13 @@ public class main {
             System.out.println("Computer Suggestions: ");
             if(wordList.size() < 1)
             {
-                System.out.println("No Suggestions");
+                System.out.println("Word doesn't exist in txt file || You have made an error in inputting 0 or 1 or 2");
                 return;
+            }
+            if(wordList.size() == 1)
+            {
+                System.out.println("Wordle word is: " + wordList.get(0));
+                break;
             }
             else if(wordList.size() < 10)
             {
