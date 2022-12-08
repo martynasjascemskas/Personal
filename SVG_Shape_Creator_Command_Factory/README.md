@@ -1,4 +1,4 @@
-﻿# SVG Shape Creator using Command Design Pattern
+﻿# SVG Shape Creator using Command Design Pattern + Abstract Factory
 
 SVG Shape Creator project done during University. <br />
 Allows you to create an SVG shape inside a Canvas. <br />
