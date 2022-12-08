@@ -1,0 +1,37 @@
+@startuml
+abstract class abstractFactory {
+    + Fill : string
+    + Stroke : string
+    + StrokeWidth : string
+    + {abstract} CreateShape() : AbstractShape
+}
+class RectangleFactory {
+    + <<override>> CreateShape() : AbstractShape
+}
+class CircleFactory {
+    + <<override>> CreateShape() : AbstractShape
+}
+class EllipseFactory {
+    + <<override>> CreateShape() : AbstractShape
+}
+class LineFactory {
+    + <<override>> CreateShape() : AbstractShape
+}
+class PathFactory {
+    + <<override>> CreateShape() : AbstractShape
+}
+class PolygonFactory {
+    + <<override>> CreateShape() : AbstractShape
+}
+class PolylineFactory {
+    + <<override>> CreateShape() : AbstractShape
+}
+abstractFactory o-> "r" Random
+abstractFactory <|-- RectangleFactory
+abstractFactory <|-- CircleFactory
+abstractFactory <|-- EllipseFactory
+abstractFactory <|-- LineFactory
+abstractFactory <|-- PathFactory
+abstractFactory <|-- PolygonFactory
+abstractFactory <|-- PolylineFactory
+@enduml

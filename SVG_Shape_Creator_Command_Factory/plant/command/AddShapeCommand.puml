@@ -1,0 +1,8 @@
+@startuml
+class AddShapeCommand {
+    + AddShapeCommand(receiver:SVG_Shape_Creator_Command_Factory.Canvas, shape:SVG_Shape_Creator_Command_Factory.AbstractShape)
+    + <<override>> Execute() : void
+    + <<override>> Unexecute() : void
+}
+ICommand <|-- AddShapeCommand
+@enduml

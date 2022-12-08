@@ -1,0 +1,12 @@
+@startuml
+class Invoker {
+    + Invoker()
+    + AddCommand(command:ICommand) : void
+    + Undo() : void
+    + Redo() : void
+}
+class "List`1"<T> {
+}
+Invoker --> "commands<ICommand>" "List`1"
+Invoker --> "cache<ICommand>" "List`1"
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+abstract class ICommand {
+    + {abstract} Execute() : void
+    + {abstract} Unexecute() : void
+}
+@enduml

@@ -1,0 +1,15 @@
+C:\Users\marti\gitfolder\Personal-2\SVG_Shape_Creator_Factory\obj\Debug\net6.0\SVG_Shape_Creator_Factory.csproj.AssemblyReference.cache
+C:\Users\marti\gitfolder\Personal-2\SVG_Shape_Creator_Factory\obj\Debug\net6.0\SVG_Shape_Creator_Factory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marti\gitfolder\Personal-2\SVG_Shape_Creator_Factory\obj\Debug\net6.0\SVG_Shape_Creator_Factory.AssemblyInfoInputs.cache
+C:\Users\marti\gitfolder\Personal-2\SVG_Shape_Creator_Factory\obj\Debug\net6.0\SVG_Shape_Creator_Factory.AssemblyInfo.cs
+C:\Users\marti\gitfolder\Personal-2\SVG_Shape_Creator_Factory\obj\Debug\net6.0\SVG_Shape_Creator_Factory.csproj.CoreCompileInputs.cache
+C:\Users\marti\gitfolder\Personal-2\SVG_Shape_Creator_Factory\bin\Debug\net6.0\SVG_Shape_Creator_Factory.exe
+C:\Users\marti\gitfolder\Personal-2\SVG_Shape_Creator_Factory\bin\Debug\net6.0\SVG_Shape_Creator_Factory.deps.json
+C:\Users\marti\gitfolder\Personal-2\SVG_Shape_Creator_Factory\bin\Debug\net6.0\SVG_Shape_Creator_Factory.runtimeconfig.json
+C:\Users\marti\gitfolder\Personal-2\SVG_Shape_Creator_Factory\bin\Debug\net6.0\SVG_Shape_Creator_Factory.dll
+C:\Users\marti\gitfolder\Personal-2\SVG_Shape_Creator_Factory\bin\Debug\net6.0\SVG_Shape_Creator_Factory.pdb
+C:\Users\marti\gitfolder\Personal-2\SVG_Shape_Creator_Factory\obj\Debug\net6.0\SVG_Shape_Creator_Factory.dll
+C:\Users\marti\gitfolder\Personal-2\SVG_Shape_Creator_Factory\obj\Debug\net6.0\refint\SVG_Shape_Creator_Factory.dll
+C:\Users\marti\gitfolder\Personal-2\SVG_Shape_Creator_Factory\obj\Debug\net6.0\SVG_Shape_Creator_Factory.pdb
+C:\Users\marti\gitfolder\Personal-2\SVG_Shape_Creator_Factory\obj\Debug\net6.0\SVG_Shape_Creator_Factory.genruntimeconfig.cache
+C:\Users\marti\gitfolder\Personal-2\SVG_Shape_Creator_Factory\obj\Debug\net6.0\ref\SVG_Shape_Creator_Factory.dll

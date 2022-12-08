@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SVG_Shape_Creator_Command_Factory/1.0.0": {
+        "runtime": {
+          "SVG_Shape_Creator_Command_Factory.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SVG_Shape_Creator_Command_Factory/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

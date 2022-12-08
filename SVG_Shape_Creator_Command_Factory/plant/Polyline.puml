@@ -1,0 +1,12 @@
+@startuml
+class Polyline {
+    - Points : string
+    - Stroke : string
+    - Fill : string
+    - StrokeWidth : string
+    + Polyline(p1:string, stroke:string, fill:string, strokeWidth:string)
+    + Polyline(p1:string)
+    + <<override>> ToSvg() : string
+}
+AbstractShape <|-- Polyline
+@enduml
