@@ -25,6 +25,7 @@ namespace SVG_Shape_Creator_Memento_Factory
             PolylineFactory polylineFactory = new PolylineFactory();
             LineFactory lineFactory = new LineFactory();
             PathFactory pathFactory = new PathFactory();
+            StylingFactory styleFactory = new StylingFactory();
             
             bool flag = false; //creates a variable in order to end the while loop.
             var canvas = new Canvas(1000, 1000); //Creates a canvas of size 1000 x 1000.
@@ -45,7 +46,7 @@ namespace SVG_Shape_Creator_Memento_Factory
                     Console.WriteLine("");
 
                     var newCanvas = new Canvas(canvas.getShapes(),1000,1000);
-                    var r = rectangleFactory.CreateShape();
+                    var r = rectangleFactory.CreateShape(styleFactory.CreateStyle());
                     newCanvas.AddShape(r);
                     canvas.AddShape(r);
                     originator.restoreFromMemento(new memento.Memento(newCanvas));
@@ -61,7 +62,7 @@ namespace SVG_Shape_Creator_Memento_Factory
                     Console.WriteLine("");
                 
                     var newCanvas = new Canvas(canvas.getShapes(),1000,1000);
-                    var circle = circleFactory.CreateShape();
+                    var circle = circleFactory.CreateShape(styleFactory.CreateStyle());
                     newCanvas.AddShape(circle);
                     canvas.AddShape(circle);
                     originator.restoreFromMemento(new memento.Memento(newCanvas));
@@ -77,7 +78,7 @@ namespace SVG_Shape_Creator_Memento_Factory
                     Console.WriteLine("");
                 
                     var newCanvas = new Canvas(canvas.getShapes(),1000,1000);
-                    var ellipse = ellipseFactory.CreateShape();
+                    var ellipse = ellipseFactory.CreateShape(styleFactory.CreateStyle());
                     newCanvas.AddShape(ellipse);
                     canvas.AddShape(ellipse);
                     originator.restoreFromMemento(new memento.Memento(newCanvas));
@@ -93,7 +94,7 @@ namespace SVG_Shape_Creator_Memento_Factory
                     Console.WriteLine("");
                     
                     var newCanvas = new Canvas(canvas.getShapes(),1000,1000);
-                    var line = lineFactory.CreateShape();
+                    var line = lineFactory.CreateShape(styleFactory.CreateStyle());
                     newCanvas.AddShape(line);
                     canvas.AddShape(line);
                     originator.restoreFromMemento(new memento.Memento(newCanvas));
@@ -109,7 +110,7 @@ namespace SVG_Shape_Creator_Memento_Factory
                     Console.WriteLine("");
                     
                     var newCanvas = new Canvas(canvas.getShapes(),1000,1000);
-                    var polyline = polylineFactory.CreateShape();
+                    var polyline = polylineFactory.CreateShape(styleFactory.CreateStyle());
                     newCanvas.AddShape(polyline);
                     canvas.AddShape(polyline);
                     originator.restoreFromMemento(new memento.Memento(newCanvas));
@@ -125,7 +126,7 @@ namespace SVG_Shape_Creator_Memento_Factory
                     Console.WriteLine("");
                     
                     var newCanvas = new Canvas(canvas.getShapes(),1000,1000);
-                    var polygon = polygonFactory.CreateShape();
+                    var polygon = polygonFactory.CreateShape(styleFactory.CreateStyle());
                     newCanvas.AddShape(polygon);
                     canvas.AddShape(polygon);
                     originator.restoreFromMemento(new memento.Memento(newCanvas));
@@ -141,7 +142,7 @@ namespace SVG_Shape_Creator_Memento_Factory
                     Console.WriteLine("");
                     
                     var newCanvas = new Canvas(canvas.getShapes(),1000,1000);
-                    var path = pathFactory.CreateShape();
+                    var path = pathFactory.CreateShape(styleFactory.CreateStyle());
                     newCanvas.AddShape(path);
                     canvas.AddShape(path);
                     originator.restoreFromMemento(new memento.Memento(newCanvas));

@@ -22,6 +22,7 @@ namespace SVG_Shape_Creator_Factory
             PolylineFactory polylineFactory = new PolylineFactory();
             LineFactory lineFactory = new LineFactory();
             PathFactory pathFactory = new PathFactory();
+            StylingFactory styleFactory = new StylingFactory();
             
             while(flag == false){
                 //Asks user for input. Depending on input do a certain function.
@@ -43,7 +44,7 @@ namespace SVG_Shape_Creator_Factory
                         Console.WriteLine("CORRECT SHAPE ENTERED");
                         Console.WriteLine("");
             
-                        var r = rectangleFactory.CreateShape();
+                        var r = rectangleFactory.CreateShape(styleFactory.CreateStyle());
                         canvas.AddShape(r);
 
                         Console.Clear();
@@ -54,7 +55,7 @@ namespace SVG_Shape_Creator_Factory
                         Console.Clear();
                         Console.WriteLine("CORRECT SHAPE ENTERED");
                         
-                        var circle = circleFactory.CreateShape();
+                        var circle = circleFactory.CreateShape(styleFactory.CreateStyle());
                         canvas.AddShape(circle);
 
                         Console.Clear();
@@ -66,7 +67,7 @@ namespace SVG_Shape_Creator_Factory
                         Console.WriteLine("CORRECT SHAPE ENTERED");
                         Console.WriteLine("");
 
-                        var ellipse = ellipseFactory.CreateShape();
+                        var ellipse = ellipseFactory.CreateShape(styleFactory.CreateStyle());
                         canvas.AddShape(ellipse);
                         
                         Console.Clear();
@@ -78,7 +79,7 @@ namespace SVG_Shape_Creator_Factory
                         Console.WriteLine("CORRECT SHAPE ENTERED");
                         Console.WriteLine("");
                         
-                        var line = lineFactory.CreateShape();
+                        var line = lineFactory.CreateShape(styleFactory.CreateStyle());
                         canvas.AddShape(line);
                         
                         Console.Clear();
@@ -90,7 +91,7 @@ namespace SVG_Shape_Creator_Factory
                         Console.WriteLine("CORRECT SHAPE ENTERED");
                         Console.WriteLine("");
                     
-                        var polyline = polylineFactory.CreateShape();
+                        var polyline = polylineFactory.CreateShape(styleFactory.CreateStyle());
                         canvas.AddShape(polyline);
                         
                         Console.Clear();
@@ -102,7 +103,7 @@ namespace SVG_Shape_Creator_Factory
                         Console.WriteLine("CORRECT SHAPE ENTERED");
                         Console.WriteLine("");
                         
-                        var polygon = polygonFactory.CreateShape();
+                        var polygon = polygonFactory.CreateShape(styleFactory.CreateStyle());
                         canvas.AddShape(polygon);
 
                         Console.Clear();
@@ -114,7 +115,7 @@ namespace SVG_Shape_Creator_Factory
                         Console.WriteLine("CORRECT SHAPE ENTERED");
                         Console.WriteLine("");
                         
-                        var path = pathFactory.CreateShape();
+                        var path = pathFactory.CreateShape(styleFactory.CreateStyle());
                         canvas.AddShape(path);
 
                         Console.Clear();
@@ -163,7 +164,7 @@ namespace SVG_Shape_Creator_Factory
                         Console.WriteLine("UPDATING 'RECTANGLE' SHAPE");
                         canvas.RemoveShape(id);
                         
-                        var r1 = rectangleFactory.CreateShape();
+                        var r1 = rectangleFactory.CreateShape(styleFactory.CreateStyle());
                         canvas.insertShape(id, r1);
                         
                         Console.Clear();
@@ -176,7 +177,7 @@ namespace SVG_Shape_Creator_Factory
                         Console.WriteLine("UPDATING 'CIRCLE' SHAPE");
                         canvas.RemoveShape(id);
                         
-                        var circle1 = circleFactory.CreateShape();
+                        var circle1 = circleFactory.CreateShape(styleFactory.CreateStyle());
                         canvas.insertShape(id, circle1);
                         
                         Console.Clear();
@@ -188,7 +189,7 @@ namespace SVG_Shape_Creator_Factory
                         Console.WriteLine("UPDATING 'ELLIPSE' SHAPE");
                         canvas.RemoveShape(id);
                         
-                        var ellipse1 = ellipseFactory.CreateShape();
+                        var ellipse1 = ellipseFactory.CreateShape(styleFactory.CreateStyle());
                         canvas.insertShape(id, ellipse1);
                         
                         Console.Clear();
@@ -200,7 +201,7 @@ namespace SVG_Shape_Creator_Factory
                         Console.WriteLine("UPDATING 'LINE' SHAPE");
                         canvas.RemoveShape(id);
                         
-                        var line1 = lineFactory.CreateShape();
+                        var line1 = lineFactory.CreateShape(styleFactory.CreateStyle());
                         canvas.insertShape(id, line1);
                     
                         Console.Clear();
@@ -212,7 +213,7 @@ namespace SVG_Shape_Creator_Factory
                         Console.WriteLine("UPDATING 'POLYLINE' SHAPE");
                         canvas.RemoveShape(id);
                        
-                        var polyline1 = polylineFactory.CreateShape();
+                        var polyline1 = polylineFactory.CreateShape(styleFactory.CreateStyle());
                         canvas.insertShape(id, polyline1);
                         
                         Console.Clear();
@@ -224,7 +225,7 @@ namespace SVG_Shape_Creator_Factory
                         Console.WriteLine("UPDATING 'POLYGON' SHAPE");
                         canvas.RemoveShape(id);
                         
-                        var polygon1 = polygonFactory.CreateShape();
+                        var polygon1 = polygonFactory.CreateShape(styleFactory.CreateStyle());
                         canvas.insertShape(id, polygon1);
                     
                         Console.Clear();
@@ -236,7 +237,7 @@ namespace SVG_Shape_Creator_Factory
                         Console.WriteLine("UPDATING 'PATH' SHAPE");
                         canvas.RemoveShape(id);
                         
-                        var path1 = pathFactory.CreateShape();
+                        var path1 = pathFactory.CreateShape(styleFactory.CreateStyle());
                         canvas.insertShape(id, path1);
                        
                         Console.Clear();

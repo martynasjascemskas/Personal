@@ -4,28 +4,28 @@ namespace SVG_Shape_Creator_Factory
         private int CX, CY, RX, RY;
         private string Stroke, Fill, StrokeWidth;
         
-        public Ellipse(int cx, int cy, int rx, int ry, string stroke, string fill, string strokeWidth){
+        public Ellipse(int cx, int cy, int rx, int ry, Style style){
             CX = cx;
             CY = cy;
             RX = rx;
             RY = ry;
-            Stroke = stroke;
-            Fill = fill;
-            StrokeWidth = strokeWidth;
+            Stroke = style.Stroke;
+            Fill = style.Fill;
+            StrokeWidth = style.StrokeWidth;
         }
-        public Ellipse(int cx, int cy, int rx, int ry){
-            CX = cx;
-            CY = cy;
-            RX = rx;
-            RY = ry;
-            Fill = "cyan";
-            Stroke = "black";
-            StrokeWidth = "1";
-        }
+        // public Ellipse(int cx, int cy, int rx, int ry){
+        //     CX = cx;
+        //     CY = cy;
+        //     RX = rx;
+        //     RY = ry;
+        //     Fill = "cyan";
+        //     Stroke = "black";
+        //     StrokeWidth = "1";
+        // }
 
         public override string ToSvg(){
             return $"<ellipse cx=\"{CX}\" cy=\"{CY}\" rx=\"{RX}\" ry=\"{RY}\" " +
-            $"fill=\"{Fill}\" stroke=\"{Stroke}\" stroke-width=\"{StrokeWidth}\"/>";
+            $"fill=\"{Fill}\" stroke=\"{Stroke}\" stroke-width=\"{StrokeWidth}\"/>\n";
         }
     }
 }
