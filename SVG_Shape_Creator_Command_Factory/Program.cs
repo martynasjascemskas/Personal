@@ -24,6 +24,7 @@ namespace SVG_Shape_Creator_Command_Factory
             PolylineFactory polylineFactory = new PolylineFactory();
             LineFactory lineFactory = new LineFactory();
             PathFactory pathFactory = new PathFactory();
+            StylingFactory styleFactory = new StylingFactory();
 
             bool flag = false;
             while(flag == false){
@@ -41,7 +42,7 @@ namespace SVG_Shape_Creator_Command_Factory
                     Console.WriteLine("CORRECT SHAPE ENTERED");
                     Console.WriteLine("");
 
-                    var r = rectangleFactory.CreateShape();
+                    var r = rectangleFactory.CreateShape(styleFactory.CreateStyle());
                     var cmd = new command.AddShapeCommand(canvas, r);
                     invoker.AddCommand(cmd);
 
@@ -53,7 +54,7 @@ namespace SVG_Shape_Creator_Command_Factory
                     Console.Clear();
                     Console.WriteLine("CORRECT SHAPE ENTERED");
                     
-                    var circle = circleFactory.CreateShape();
+                    var circle = circleFactory.CreateShape(styleFactory.CreateStyle());
                     var cmd = new command.AddShapeCommand(canvas, circle);
                     invoker.AddCommand(cmd);
 
@@ -66,7 +67,7 @@ namespace SVG_Shape_Creator_Command_Factory
                     Console.WriteLine("CORRECT SHAPE ENTERED");
                     Console.WriteLine("");
 
-                    var r = ellipseFactory.CreateShape();
+                    var r = ellipseFactory.CreateShape(styleFactory.CreateStyle());
                     var cmd = new command.AddShapeCommand(canvas, r);
                     invoker.AddCommand(cmd);
 
@@ -79,7 +80,7 @@ namespace SVG_Shape_Creator_Command_Factory
                     Console.WriteLine("CORRECT SHAPE ENTERED");
                     Console.WriteLine("");
 
-                    var line = rectangleFactory.CreateShape();
+                    var line = rectangleFactory.CreateShape(styleFactory.CreateStyle());
                     var cmd = new command.AddShapeCommand(canvas, line);
                     invoker.AddCommand(cmd);
 
@@ -91,7 +92,7 @@ namespace SVG_Shape_Creator_Command_Factory
                     Console.Clear();
                     Console.WriteLine("CORRECT SHAPE ENTERED");
                    
-                    var pline = polylineFactory.CreateShape();
+                    var pline = polylineFactory.CreateShape(styleFactory.CreateStyle());
                     var cmd = new command.AddShapeCommand(canvas, pline);
                     invoker.AddCommand(cmd);
 
@@ -104,7 +105,7 @@ namespace SVG_Shape_Creator_Command_Factory
                     Console.WriteLine("CORRECT SHAPE ENTERED");
                     Console.WriteLine("");
 
-                    var polygon = polygonFactory.CreateShape();
+                    var polygon = polygonFactory.CreateShape(styleFactory.CreateStyle());
                     var cmd = new command.AddShapeCommand(canvas, polygon);
                     invoker.AddCommand(cmd);
 
@@ -117,7 +118,7 @@ namespace SVG_Shape_Creator_Command_Factory
                     Console.WriteLine("CORRECT SHAPE ENTERED");
                     Console.WriteLine("");
                     
-                    var path = pathFactory.CreateShape();
+                    var path = pathFactory.CreateShape(styleFactory.CreateStyle());
                     var cmd = new command.AddShapeCommand(canvas, path);
                     invoker.AddCommand(cmd);
 

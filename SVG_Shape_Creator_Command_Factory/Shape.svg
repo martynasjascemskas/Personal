@@ -1,10 +1,10 @@
 <?xml version="1.0" standalone="no"?>
 <svg width="1000" height="1000" version="1.1" xmlns="http://www.w3.org/2000/svg">
-<rect x="847" y="716" width="47" height="25" fill="Magenta" stroke="LawnGreen" stroke-width="8"/>
-<circle cx="792" cy="73" r="75" fill="Firebrick" stroke="LightBlue" stroke-width="8"/>
-<ellipse cx="214" cy="607" rx="59" ry="12" fill="DeepPink" stroke="White" stroke-width="3"/>
-<rect x="690" y="409" width="28" height="86" fill="MintCream" stroke="WindowFrame" stroke-width="11"/>
-<polyline points="100,100 150,25 150, 75 200,0" fill="LightSlateGray" stroke="Green" stroke-width="4"/>
-<polygon points="100,100 150,25 150, 75 200,0" fill="Aquamarine" stroke="MediumBlue" stroke-width="6"/>
-<path d="M 130 110 C 120 140, 180 140, 170 110" fill="DarkBlue" stroke="LightCyan" stroke-width="1"/>
+<rect x="123" y="217" width="78" height="56" fill="InactiveCaptionText" stroke="Teal" stroke-width="3"/>
+<circle cx="83" cy="394" r="81" fill="PaleTurquoise" stroke="Moccasin" stroke-width="10"/>
+<ellipse cx="128" cy="220" rx="25" ry="76" fill="Window" stroke="Blue" stroke-width="2"/>
+<rect x="57" y="159" width="88" height="68" fill="DarkSlateBlue" stroke="MediumVioletRed" stroke-width="13"/>
+<polyline points="160,160 210,85 210,135 260,60" fill="InactiveCaption" stroke="GrayText" stroke-width="9"/>
+<polygon points="100,100 150,25 150, 75 200,0" fill="Purple" stroke="Plum" stroke-width="9"/>
+<path d="M 130 110 C 120 140, 180 140, 170 110" fill="OrangeRed" stroke="Chartreuse" stroke-width="3"/>
 </svg>

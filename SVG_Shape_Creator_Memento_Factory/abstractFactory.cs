@@ -16,8 +16,8 @@ namespace SVG_Shape_Creator_Memento_Factory.abstractFactory
     {
         public override AbstractShape CreateShape()
         {
-            int X = r.Next(1,1000);
-            int Y = r.Next(1,1000);
+            int X = r.Next(1,500);
+            int Y = r.Next(1,500);
             int Width = r.Next(1,100);
             int Height = r.Next(1,100);
             Fill = allcolors[r.Next(allcolors.Length)].ToString();
@@ -30,8 +30,8 @@ namespace SVG_Shape_Creator_Memento_Factory.abstractFactory
     {
         public override AbstractShape CreateShape()
         {
-            int CX = r.Next(1,1000);
-            int CY = r.Next(1,1000);
+            int CX = r.Next(1,500);
+            int CY = r.Next(1,500);
             int R = r.Next(1,100);
             Fill = allcolors[r.Next(allcolors.Length)].ToString();
             StrokeWidth = r.Next(1,15).ToString();
@@ -43,8 +43,8 @@ namespace SVG_Shape_Creator_Memento_Factory.abstractFactory
     {
         public override AbstractShape CreateShape()
         {
-            int CX = r.Next(1,1000);
-            int CY = r.Next(1,1000);
+            int CX = r.Next(1,500);
+            int CY = r.Next(1,500);
             int RX = r.Next(1,100);
             int RY = r.Next(1,100);
             Fill = allcolors[r.Next(allcolors.Length)].ToString();
@@ -57,8 +57,8 @@ namespace SVG_Shape_Creator_Memento_Factory.abstractFactory
     {
         public override AbstractShape CreateShape()
         {
-            int X1 = r.Next(1,1000);
-            int Y1 = r.Next(1,1000);
+            int X1 = r.Next(1,500);
+            int Y1 = r.Next(1,500);
             int X2 = r.Next(1,100);
             int Y2 = r.Next(1,100);
             Fill = allcolors[r.Next(allcolors.Length)].ToString();

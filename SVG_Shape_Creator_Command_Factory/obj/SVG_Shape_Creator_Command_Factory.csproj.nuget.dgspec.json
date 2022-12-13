@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marti\\gitfolder\\Personal-2\\SVG_Shape_Creator_Command_Factory\\SVG_Shape_Creator_Command_Factory.csproj": {}
+    "C:\\Users\\marti\\gitfolder\\Personal-3\\SVG_Shape_Creator_Command_Factory\\SVG_Shape_Creator_Command_Factory.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marti\\gitfolder\\Personal-2\\SVG_Shape_Creator_Command_Factory\\SVG_Shape_Creator_Command_Factory.csproj": {
+    "C:\\Users\\marti\\gitfolder\\Personal-3\\SVG_Shape_Creator_Command_Factory\\SVG_Shape_Creator_Command_Factory.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marti\\gitfolder\\Personal-2\\SVG_Shape_Creator_Command_Factory\\SVG_Shape_Creator_Command_Factory.csproj",
+        "projectUniqueName": "C:\\Users\\marti\\gitfolder\\Personal-3\\SVG_Shape_Creator_Command_Factory\\SVG_Shape_Creator_Command_Factory.csproj",
         "projectName": "SVG_Shape_Creator_Command_Factory",
-        "projectPath": "C:\\Users\\marti\\gitfolder\\Personal-2\\SVG_Shape_Creator_Command_Factory\\SVG_Shape_Creator_Command_Factory.csproj",
+        "projectPath": "C:\\Users\\marti\\gitfolder\\Personal-3\\SVG_Shape_Creator_Command_Factory\\SVG_Shape_Creator_Command_Factory.csproj",
         "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marti\\gitfolder\\Personal-2\\SVG_Shape_Creator_Command_Factory\\obj\\",
+        "outputPath": "C:\\Users\\marti\\gitfolder\\Personal-3\\SVG_Shape_Creator_Command_Factory\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config"
